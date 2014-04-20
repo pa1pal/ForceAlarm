@@ -64,7 +64,19 @@ public class Home extends Activity{
 				}
 				n=hour*3600+min*60-Sec;
 				
-				
+				Notification.Builder notificationBuilder = new Notification.Builder(
+						getApplicationContext())
+						.setTicker(notification)
+						.setSmallIcon(R.drawable.bellicon)
+						.setAutoCancel(true)
+						.setContentTitle(notificationTitle)
+						.setContentText("hey force alarm is ready to force you")
+						.setVibrate(mVibratePattern);
+
+				// Pass the Notification to the NotificationManager:
+				NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+				mNotificationManager.notify(MY_NOTIFICATION_ID,
+						notificationBuilder.build());
 				
 				Intent go = new Intent("com.cic.forcealarm.Alarmset");
 				startActivity(go);
