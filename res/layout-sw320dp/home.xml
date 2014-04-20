@@ -10,7 +10,7 @@
      android:layout_height="wrap_content"
      android:layout_alignParentTop="true"
      android:layout_centerHorizontal="true"
-     android:layout_marginTop="96dp" />
+     android:layout_marginTop="81dp" />
 
  <Button
      android:id="@+id/button1"
@@ -18,10 +18,10 @@
      android:layout_height="wrap_content"
      android:layout_below="@+id/tpTime"
      android:layout_centerHorizontal="true"
-     android:layout_marginTop="52dp"
+     android:layout_marginTop="84dp"
      android:background="@drawable/button"
      android:text="Set Alarm"
      android:textColor="@color/white"
-     android:textSize="20sp" />
+     android:textSize="30sp" />
     
 </RelativeLayout>

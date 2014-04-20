@@ -17,4 +17,13 @@
 	    android:textColor="#dc3c2f"
 	    android:textSize="35sp" />
 
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/test"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="30dp"
+	    android:text="EXIT" />
+
 </RelativeLayout>

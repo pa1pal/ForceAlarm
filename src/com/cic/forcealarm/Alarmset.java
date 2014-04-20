@@ -3,12 +3,17 @@ package com.cic.forcealarm;
 import java.util.Calendar;
 
 
+
+
+
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 public class Alarmset extends Activity{
 
@@ -30,7 +35,17 @@ public class Alarmset extends Activity{
             (AlarmManager)getSystemService(Activity.ALARM_SERVICE);
         am.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),
                 pendingIntent);
-        finish();
+        
+        
+        Button exit = (Button)findViewById(R.id.button1);
+        exit.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				finish();
+			}
+		});
     }
 
 }
