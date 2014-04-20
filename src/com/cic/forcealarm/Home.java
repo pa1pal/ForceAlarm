@@ -99,12 +99,29 @@ public class Home extends Activity{
 		DialogFragment aboutD = new aboutDialog();
 		aboutD.show(getFragmentManager(), "ABOUT_DIALOG");
 		return true;
-		default:
 		
-			
+		
+		case R.id.share:
+			Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND); 
+		    sharingIntent.setType("text/plain");
+		    String shareBody = "Hide your Last seen on whatsapp";
+		    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Force Alarm : Great app which force you to wake up in morning");
+		    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+		startActivity(Intent.createChooser(sharingIntent, "Share via"));
+		Home.this.overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.bounce_interpolator);
+		return true;
+		
+		
+		case R.id.rate:
+			Intent rate = new Intent(android.content.Intent.ACTION_VIEW);
+            rate.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.cic.forcealarm"));
+                startActivity(rate);
+        		Home.this.overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+              return true;
+		default:
 		  
 		}
-		return false;
+		return true;
 	}
 	
 	
