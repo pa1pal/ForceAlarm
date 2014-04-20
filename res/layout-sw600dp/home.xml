@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" 
-    android:background="#77acd0">
+ >
 
  <Button
      android:id="@+id/button1"
@@ -14,7 +14,7 @@
      android:background="@drawable/button"
      android:text="Set Alarm" 
      android:textColor="@color/white"
-     android:textSize="45sp"/>
+     android:textSize="55sp"/>
 
  <TimePicker
      android:id="@+id/tpTime"

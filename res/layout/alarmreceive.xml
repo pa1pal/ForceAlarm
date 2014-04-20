@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#87b08e" >
+     >
 
     <Button
         android:id="@+id/stopAlarm"
