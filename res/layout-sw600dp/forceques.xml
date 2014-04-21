@@ -29,10 +29,20 @@
          android:id="@+id/givemeques"
          android:layout_width="300dp"
          android:layout_height="100dp"
-         android:layout_alignLeft="@+id/editText1"
+         android:layout_alignParentLeft="true"
          android:layout_below="@+id/editText1"
-         android:layout_marginTop="35dp"
+         android:layout_marginTop="39dp"
          android:text="Stop"
+         android:textSize="35sp" />
+
+     <Button
+         android:id="@+id/snooze"
+         android:layout_width="300dp"
+         android:layout_height="100dp"
+         android:layout_alignBaseline="@+id/givemeques"
+         android:layout_alignBottom="@+id/givemeques"
+         android:layout_toRightOf="@+id/givemeques"
+         android:text="Snooze"
          android:textSize="35sp" />
 
 </RelativeLayout>
