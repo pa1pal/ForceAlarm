@@ -7,31 +7,46 @@
          android:id="@+id/textView1"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_above="@+id/editText1"
+         android:layout_alignParentTop="true"
          android:layout_centerHorizontal="true"
-         android:layout_marginBottom="26dp"
+         android:layout_marginTop="96dp"
          android:text="123"
          android:textAppearance="?android:attr/textAppearanceLarge"
-         android:textSize="20sp" />
+         android:textSize="25sp" />
 
      <Button
-         android:id="@+id/givemeques"
+         android:id="@+id/snooze"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_alignParentBottom="true"
-         android:layout_centerHorizontal="true"
-         android:layout_marginBottom="191dp"
-         android:text="Hey plz Stop it" />
+         android:layout_alignBaseline="@+id/givemeques"
+         android:layout_alignBottom="@+id/givemeques"
+         android:layout_alignRight="@+id/editText1"
+         android:text="Snooze"
+         android:textSize="35sp" />
 
      <EditText
          android:id="@+id/editText1"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_above="@+id/givemeques"
-         android:layout_centerHorizontal="true"
-         android:layout_marginBottom="19dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView1"
+         android:layout_marginTop="74dp"
          android:ems="10"
          android:hint="enter answer"
-         android:inputType="number" />
+         android:inputType="number"
+         android:textSize="30sp" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/givemeques"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/editText1"
+         android:layout_marginTop="59dp"
+         android:layout_toLeftOf="@+id/textView1"
+         android:text="Stop"
+         android:textSize="35sp" />
 
 </RelativeLayout>

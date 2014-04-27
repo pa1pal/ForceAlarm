@@ -10,7 +10,7 @@
      android:layout_height="wrap_content"
      android:layout_above="@+id/button1"
      android:layout_centerHorizontal="true"
-     android:layout_marginBottom="128dp"
+     android:layout_marginBottom="205dp"
      android:scaleX="1.5"
      android:scaleY="1.5" />
 
@@ -20,7 +20,7 @@
      android:layout_height="100dp"
      android:layout_alignParentBottom="true"
      android:layout_centerHorizontal="true"
-     android:layout_marginBottom="189dp"
+     android:layout_marginBottom="165dp"
      android:background="@drawable/button"
      android:text="Set Alarm"
      android:textColor="@color/white"

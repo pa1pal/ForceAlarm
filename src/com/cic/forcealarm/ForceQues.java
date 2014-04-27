@@ -32,7 +32,7 @@ public class ForceQues extends Activity{
 		c=ram.nextInt(10);
 		d=ram.nextInt(10);
 		e=ram.nextInt(10);
-		String str= Integer.toString(a)+'+'+Integer.toString(b)+'+'+Integer.toString(c)+'*'+Integer.toString(d)+'+'+Integer.toString(e);
+		String str= Integer.toString(a)+'*'+Integer.toString(b)+'+'+Integer.toString(c)+'*'+Integer.toString(d)+'+'+Integer.toString(e);
 		text.setText(str);
 	
 		r = result(a, b, c, d, e);

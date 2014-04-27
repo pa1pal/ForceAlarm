@@ -104,8 +104,8 @@ public class Home extends Activity{
 		case R.id.share:
 			Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND); 
 		    sharingIntent.setType("text/plain");
-		    String shareBody = "Hide your Last seen on whatsapp";
-		    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Force Alarm : Great app which force you to wake up in morning");
+		    String shareBody = "This app will definitely wake you up by forcing you to solve a mathematical problem to stop alarm! Sounds good !. You can install it from here : https://github.com/pa1pal/ForceAlarm/blob/master/bin/ForceAlarm.apk .(click on Raw) Thanks ";
+		    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Force Alarm android app");
 		    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
 		startActivity(Intent.createChooser(sharingIntent, "Share via"));
 		Home.this.overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.bounce_interpolator);
