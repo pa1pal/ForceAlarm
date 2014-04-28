@@ -104,7 +104,7 @@ public class Home extends Activity{
 		case R.id.share:
 			Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND); 
 		    sharingIntent.setType("text/plain");
-		    String shareBody = "This app will definitely wake you up by forcing you to solve a mathematical problem to stop alarm! Sounds good !. You can install it from here : https://github.com/pa1pal/ForceAlarm/blob/master/bin/ForceAlarm.apk .(open in browser and click on view raw) Thanks ";
+		    String shareBody = "This app will definitely wake you up by forcing you to solve a mathematical problem to stop alarm! Sounds good !. You can install it from here : https://github.com/pa1pal/ForceAlarm/blob/master/bin/ForceAlarm.apk .(open in browser and click on view raw) Thanks! \nsent via Force Alarm ";
 		    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Force Alarm android app");
 		    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
 		startActivity(Intent.createChooser(sharingIntent, "Share via"));

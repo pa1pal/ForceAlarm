@@ -81,7 +81,7 @@ public class ForceQues extends Activity{
 	public int result (int a, int b, int c, int d, int e)
 	{
 		int re;
-		re = a+b+c*d+e ;
+		re = a*b+c*d+e ;
 		return re;
 		
 	}
